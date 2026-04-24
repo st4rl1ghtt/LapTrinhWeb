@@ -1,0 +1,187 @@
+/* --- 1. Khung bao ngoài (Container) --- */
+#container {
+    width: 960px;
+    margin: auto;
+}
+
+/* --- 2. Xóa định dạng float (Clearfix) --- */
+.clear {
+    clear: both;
+}
+
+/* --- 3. Phần Header (Logo & Nav) --- */
+.logo {
+    width: 140px;
+    margin: 0 10px;
+    float: left;
+}
+
+.nav {
+    width: 780px;
+    margin: 0 10px;
+    float: left;
+    padding-top: 50px;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    padding: 0 20px 5px 20px;
+    text-decoration: none;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    color: #889297;
+}
+
+.nav ul li a:hover {
+    color: #d23434;
+    border-bottom: 3px solid #626b70;
+}
+
+.nav ul li a:active {
+    color: #03F;
+    border-bottom: 3px solid #09F;
+}
+
+/* CSS bổ sung cho gNav (nếu bạn sử dụng ID gNav cho ul) */
+div#gNav ul {
+    background: url(../images/bg_gnav.gif) repeat-x;
+    border: 1px solid #000;
+    height: 22px;
+    padding: 12px 0;
+}
+
+/* --- 4. Phần Slider --- */
+#slider {
+    width: 940px;
+    margin: 10px 10px;
+}
+
+/* --- 5. Phần Menu trái (Aside) --- */
+#aside {
+    width: 220px;
+    margin: 10px;
+    float: left;
+}
+
+#aside ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#aside h2 {
+    color: #596267;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    border-bottom: 3px solid #dce1e3;
+}
+
+#aside ul li a {
+    color: #596267;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #dce1e3;
+    display: block;
+    line-height: 40px;
+}
+
+/* --- 6. Phần Nội dung (Content) --- */
+#content {
+    width: 720px;
+    float: left;
+}
+
+/* Mẫu thiết kế mới */
+.mau_thiet_ke_moi {
+    width: 720px;
+    padding-top: 62px;
+}
+
+.san_pham {
+    width: 220px;
+    float: left;
+    margin: 0 10px;
+}
+
+.san_pham h3 {
+    color: #303131;
+    font-size: 15px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.san_pham p {
+    color: #787a7b;
+    font-size: 12px;
+    font-family: Tahoma, Geneva, sans-serif;
+    line-height: 24px;
+}
+
+/* Sản phẩm cao cấp */
+.noi_that_cao_cap {
+    width: 720px;
+    padding-top: 42px;
+}
+
+.sp_cao_cap {
+    width: 220px;
+    float: left;
+    margin: 10px;
+}
+
+.sp_cao_cap h3 {
+    color: #d23434;
+    font-size: 15px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.sp_cao_cap p {
+    color: #787a7b;
+    font-size: 12px;
+    font-family: Tahoma, Geneva, sans-serif;
+    line-height: 24px;
+}
+
+.sp_cao_cap a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d23434;
+    padding: 0 15px;
+    float: right;
+    line-height: 30px;
+}
+
+/* --- 7. Phần Chân trang (Footer) --- */
+#footer {
+    width: 940px;
+    height: 100px;
+    background-color: #333637;
+    margin: 10px;
+    clear: both; /* Đảm bảo footer luôn nằm dưới */
+}
+
+.dia_chi {
+    width: 700px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Tahoma, Geneva, sans-serif;
+    float: left;
+}
+
+.icon {
+    width: 60px;
+    margin: 0 10px;
+    float: left;
+    padding-top: 20px;
+}
