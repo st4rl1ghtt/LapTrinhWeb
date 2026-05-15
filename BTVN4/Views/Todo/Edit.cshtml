@@ -1,0 +1,47 @@
+@model BTVN4.Models.Todo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="text-center border border-2 border-dark mb-4 p-3 shadow-sm rounded-1" style="background-color: #fcfcfc;">
+    <div style="background-color: #cda8e4; padding: 10px; margin: -1rem -1rem 1rem -1rem;" class="border-bottom border-dark">
+    </div>
+    <div class="text-start mt-4 px-3">
+        <h2 class="text-secondary fw-normal">Sửa công việc</h2>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Id" class="control-label small">Mã công việc</label>
+                        <input asp-for="Id" class="form-control form-control-sm" style="max-width: 200px;" readonly />
+                        <span asp-validation-for="Id" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Name" class="control-label small">Tên công việc</label>
+                        <input asp-for="Name" class="form-control form-control-sm" style="max-width: 200px;" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check mb-4">
+                        <label class="form-check-label small">
+                            <input class="form-check-input" asp-for="IsCompleted" /> Trạng thái hoàn thành
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Sửa" class="btn btn-primary btn-sm px-3" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a asp-action="Index" class="text-decoration-none small">Quay trở lại</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

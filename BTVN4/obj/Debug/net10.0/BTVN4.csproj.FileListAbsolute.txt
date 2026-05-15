@@ -1,0 +1,196 @@
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\appsettings.Development.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\appsettings.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\BTVN4.staticwebassets.runtime.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\BTVN4.staticwebassets.endpoints.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\BTVN4.exe
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\BTVN4.deps.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\BTVN4.runtimeconfig.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\BTVN4.dll
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\bin\Debug\net10.0\BTVN4.pdb
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\rpswa.dswa.cache.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.GeneratedMSBuildEditorConfig.editorconfig
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.AssemblyInfoInputs.cache
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.AssemblyInfo.cs
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.MvcApplicationPartsAssemblyInfo.cache
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.RazorAssemblyInfo.cache
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.RazorAssemblyInfo.cs
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\rjimswa.dswa.cache.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\scopedcss\bundle\BTVN4.styles.css
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\scopedcss\projectbundle\BTVN4.bundle.scp.css
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\ysmiqyqjt4-{0}-b9sayid5wm-b9sayid5wm.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\np7ooghhjs-{0}-61n19gt1b8-61n19gt1b8.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\sw8rema6bv-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\2ezsyjr14l-{0}-bqjiyaj88i-bqjiyaj88i.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\wpk0hbru9b-{0}-c2jlpeoesf-c2jlpeoesf.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\u6d9x5c2sl-{0}-erw9l3u2r3-erw9l3u2r3.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\eon7jl0220-{0}-aexeepp0ev-aexeepp0ev.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\odw19xq34x-{0}-d7shbmvgxk-d7shbmvgxk.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\wuatur5lij-{0}-ausgxo2sd3-ausgxo2sd3.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\cob7t1n7p2-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\7vo3oavjqe-{0}-cosvhxvwiu-cosvhxvwiu.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\38ufevr720-{0}-ub07r2b239-ub07r2b239.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\2k58eves0t-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\1ugebnhzp5-{0}-b7pk76d08c-b7pk76d08c.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\be0qmmyc94-{0}-fsbi9cje9m-fsbi9cje9m.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\j7x3oeks1s-{0}-rzd6atqjts-rzd6atqjts.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\nfrsr2rk51-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\l2t8m8hhnp-{0}-dxx9fxp4il-dxx9fxp4il.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\2b44goikge-{0}-jd9uben2k1-jd9uben2k1.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\wenvsjtofk-{0}-khv3u5hwcm-khv3u5hwcm.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\ldhhud82mv-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\nbr8avfqr2-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\kv2p5nf2of-{0}-c2oey78nd0-c2oey78nd0.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\rms35mj4eg-{0}-tdbxkamptv-tdbxkamptv.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\xs3ddhturg-{0}-j5mq2jizvt-j5mq2jizvt.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\hpbu30t5g8-{0}-06098lyss8-06098lyss8.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\vhz7q68jrz-{0}-nvvlpmu67g-nvvlpmu67g.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\e0t6ok47ll-{0}-s35ty4nyc5-s35ty4nyc5.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\w7cohfjzh3-{0}-pj5nd1wqec-pj5nd1wqec.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\0abcyqfqmw-{0}-46ein0sx1k-46ein0sx1k.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\vgtu77uh0z-{0}-v0zj4ognzu-v0zj4ognzu.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\ln9ji7wbfp-{0}-37tfw0ft22-37tfw0ft22.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\jnkytsnzv5-{0}-hrwsygsryq-hrwsygsryq.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\tnliwl7soz-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\y4nikhubvc-{0}-ft3s53vfgj-ft3s53vfgj.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\p02gt8dudl-{0}-6cfz1n2cew-6cfz1n2cew.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\druvl7fyr4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\hp8mf8y6v3-{0}-493y06b0oq-493y06b0oq.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\a3aaol5azz-{0}-iovd86k7lj-iovd86k7lj.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\ok7ur7bh41-{0}-vr1egmr9el-vr1egmr9el.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\8ugf9otm6a-{0}-kbrnm935zg-kbrnm935zg.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\q3m6cows8s-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\fcrpusezww-{0}-y7v9cxd14o-y7v9cxd14o.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\7pgoaqfywe-{0}-notf2xhcfb-notf2xhcfb.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\b6qa1jtxdm-{0}-h1s4sie4z3-h1s4sie4z3.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\kxu891ozom-{0}-63fj8s7r0e-63fj8s7r0e.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\fik1g7lfsn-{0}-0j3bgjxly4-0j3bgjxly4.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\u9049ev2dd-{0}-47otxtyo56-47otxtyo56.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\2mvxlf2wyl-{0}-4v8eqarkd7-4v8eqarkd7.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\id9lulld6n-{0}-356vix0kms-356vix0kms.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\if0ufrw05q-{0}-83jwlth58m-83jwlth58m.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\jatx4rh3gw-{0}-mrlpezrjn3-mrlpezrjn3.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\m0esgjyzj1-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\9g3i02axwe-{0}-ag7o75518u-ag7o75518u.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\wjn5wekbct-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\ly05tljbwv-{0}-0i3buxo5is-0i3buxo5is.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\e49nm3357t-{0}-o1o13a6vjx-o1o13a6vjx.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\7w76eew1k6-{0}-ttgo8qnofa-ttgo8qnofa.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\q6ypisxwnq-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\621ck0sdnx-{0}-muycvpuwrr-muycvpuwrr.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\qhfwt43evk-{0}-87fc7y1x7t-87fc7y1x7t.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\yem3f9gssx-{0}-mlv21k5csn-mlv21k5csn.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\2tiy0syi45-{0}-73hhhzed53-73hhhzed53.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\compressed\4w0iimfy9q-{0}-73hhhzed53-73hhhzed53.gz
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\staticwebassets.build.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\staticwebassets.build.json.cache
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\staticwebassets.development.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\swae.build.ex.cache
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.dll
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\refint\BTVN4.dll
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.pdb
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\BTVN4.genruntimeconfig.cache
+\\vmware-host\Shared Folders\Public Sharing\University\Lap-Trinh-Web\BTVN\BTVN4\obj\Debug\net10.0\ref\BTVN4.dll
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\appsettings.json
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\BTVN4.staticwebassets.runtime.json
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\BTVN4.staticwebassets.endpoints.json
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\BTVN4.exe
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\BTVN4.deps.json
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\BTVN4.runtimeconfig.json
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\BTVN4.dll
+C:\Users\Scott\Downloads\BTVN4\bin\Debug\net10.0\BTVN4.pdb
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.AssemblyInfoInputs.cache
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.AssemblyInfo.cs
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.csproj.CoreCompileInputs.cache
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.RazorAssemblyInfo.cache
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.RazorAssemblyInfo.cs
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\scopedcss\bundle\BTVN4.styles.css
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\scopedcss\projectbundle\BTVN4.bundle.scp.css
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\ysmiqyqjt4-{0}-b9sayid5wm-b9sayid5wm.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\np7ooghhjs-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\sw8rema6bv-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\2ezsyjr14l-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\wpk0hbru9b-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\u6d9x5c2sl-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\eon7jl0220-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\odw19xq34x-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\wuatur5lij-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\cob7t1n7p2-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\7vo3oavjqe-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\38ufevr720-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\2k58eves0t-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\1ugebnhzp5-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\be0qmmyc94-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\j7x3oeks1s-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\nfrsr2rk51-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\l2t8m8hhnp-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\2b44goikge-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\wenvsjtofk-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\ldhhud82mv-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\nbr8avfqr2-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\kv2p5nf2of-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\rms35mj4eg-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\xs3ddhturg-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\hpbu30t5g8-{0}-06098lyss8-06098lyss8.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\vhz7q68jrz-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\e0t6ok47ll-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\w7cohfjzh3-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\0abcyqfqmw-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\vgtu77uh0z-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\ln9ji7wbfp-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\jnkytsnzv5-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\tnliwl7soz-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\y4nikhubvc-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\p02gt8dudl-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\druvl7fyr4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\hp8mf8y6v3-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\a3aaol5azz-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\ok7ur7bh41-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\8ugf9otm6a-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\q3m6cows8s-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\fcrpusezww-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\7pgoaqfywe-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\b6qa1jtxdm-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\kxu891ozom-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\fik1g7lfsn-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\u9049ev2dd-{0}-47otxtyo56-47otxtyo56.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\2mvxlf2wyl-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\id9lulld6n-{0}-356vix0kms-356vix0kms.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\if0ufrw05q-{0}-83jwlth58m-83jwlth58m.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\jatx4rh3gw-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\m0esgjyzj1-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\9g3i02axwe-{0}-ag7o75518u-ag7o75518u.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\wjn5wekbct-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\ly05tljbwv-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\e49nm3357t-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\7w76eew1k6-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\q6ypisxwnq-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\621ck0sdnx-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\qhfwt43evk-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\yem3f9gssx-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\2tiy0syi45-{0}-73hhhzed53-73hhhzed53.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\compressed\4w0iimfy9q-{0}-73hhhzed53-73hhhzed53.gz
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.dll
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\refint\BTVN4.dll
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.pdb
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\BTVN4.genruntimeconfig.cache
+C:\Users\Scott\Downloads\BTVN4\obj\Debug\net10.0\ref\BTVN4.dll

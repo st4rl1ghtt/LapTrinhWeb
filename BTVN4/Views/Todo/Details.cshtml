@@ -1,0 +1,40 @@
+@model BTVN4.Models.Todo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="text-center border border-2 border-dark mb-4 p-3 shadow-sm rounded-1" style="background-color: #fcfcfc;">
+    <div style="background-color: #cda8e4; padding: 10px; margin: -1rem -1rem 1rem -1rem;" class="border-bottom border-dark">
+    </div>
+    <div class="text-start mt-4 px-3">
+        <h2 class="text-secondary fw-normal">Chi tiết công việc</h2>
+        <hr />
+        <div>
+            <dl class="row">
+                <dt class="col-sm-3 small">
+                    Mã công việc
+                </dt>
+                <dd class="col-sm-9 small">
+                    @Html.DisplayFor(model => model.Id)
+                </dd>
+                <dt class="col-sm-3 small">
+                    Tên công việc
+                </dt>
+                <dd class="col-sm-9 small">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt class="col-sm-3 small">
+                    Trạng thái hoàn thành
+                </dt>
+                <dd class="col-sm-9 small">
+                    <input type="checkbox" disabled="disabled" @(Model.IsCompleted ? "checked" : "") />
+                </dd>
+            </dl>
+        </div>
+        <div class="mt-4">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="text-decoration-none small">Sửa</a> |
+            <a asp-action="Index" class="text-decoration-none small">Quay trở lại</a>
+        </div>
+    </div>
+</div>
