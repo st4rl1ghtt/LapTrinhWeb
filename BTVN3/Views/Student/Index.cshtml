@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Đăng ký chuyên ngành";
+}
+
+<h2>Đăng ký chuyên ngành Khoa CNTT</h2>
+
+<form action="/Student/ShowKQ" method="post">
+    <div style="margin-bottom: 10px;">
+        <label>MSSV:</label><br />
+        <input type="text" name="MSSV" required placeholder="" />
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <label>Họ tên:</label><br />
+        <input type="text" name="HoTen" required placeholder="VD: Cao Le Anh Bang" />
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <label>Điểm TB:</label><br />
+        <input type="number" step="0.1" name="DiemTB" required />
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <label>Chuyên ngành:</label><br />
+        <select name="ChuyenNganh">
+            <option value="CNPM">Công nghệ phần mềm (CNPM)</option>
+            <option value="HTTT">Hệ thống thông tin (HTTT)</option>
+            <option value="ATTT" selected>An toàn thông tin (ATTT)</option>
+            <option value="TTNT">Trí tuệ nhân tạo (TTNT)</option>
+        </select>
+    </div>
+
+    <button type="submit" style="padding: 5px 15px;">Đăng ký</button>
+</form>
