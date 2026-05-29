@@ -1,0 +1,56 @@
+@model BTVN5.Models.Sach
+
+@{
+    ViewBag.Title = "Sửa sách";
+}
+
+<h2>Sửa sách</h2>
+
+@using (Html.BeginForm("Edit", "Sach", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.MaSach)
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.TenSach)
+        @Html.TextBoxFor(m => m.TenSach, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TenSach, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.TacGia)
+        @Html.TextBoxFor(m => m.TacGia, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TacGia, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MoTa)
+        @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control", rows = 4 })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Gia)
+        @Html.TextBoxFor(m => m.Gia, new { @class = "form-control", type = "number" })
+        @Html.ValidationMessageFor(m => m.Gia, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label>Ảnh hiện tại</label><br />
+        <img src="~/Content/ImageBooks/@Model.HinhAnh"
+             style="width:120px; height:160px; object-fit:cover;" />
+    </div>
+
+    <div class="form-group">
+        <label>Chọn ảnh mới nếu muốn đổi</label>
+        <input type="file" name="fileAnh" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MaChuDe)
+        @Html.DropDownList("MaChuDe", null, "-- Chọn chủ đề --", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MaChuDe, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    @Html.ActionLink("Quay lại", "Index", null, new { @class = "btn btn-secondary" })
+}

@@ -1,0 +1,26 @@
+@model BTVN5.Models.Sach
+
+@{
+    ViewBag.Title = "Xóa sách";
+}
+
+<h2>Xóa sách</h2>
+
+<h3>Bạn có chắc muốn xóa sách này không?</h3>
+
+<div>
+    <img src="~/Content/ImageBooks/@Model.HinhAnh"
+         style="width:120px; height:160px; object-fit:cover;" />
+
+    <p><b>Tên sách:</b> @Model.TenSach</p>
+    <p><b>Tác giả:</b> @Model.TacGia</p>
+    <p><b>Chủ đề:</b> @Model.ChuDe.TenChuDe</p>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    @Html.ActionLink("Hủy", "Index", null, new { @class = "btn btn-secondary" })
+}

@@ -1,0 +1,32 @@
+@model IEnumerable<BTVN5.Models.Sach>
+
+@{
+    ViewBag.Title = "Danh sách sách";
+}
+
+<h2>Danh sách sách</h2>
+
+<p>
+    @Html.ActionLink("Thêm sách mới", "Create", null, new { @class = "btn btn-success" })
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4" style="margin-bottom: 20px;">
+            <div class="card">
+                <img src="~/Content/ImageBooks/@item.HinhAnh"
+                     style="width: 180px; height: 230px; object-fit: cover;" />
+
+                <h4>@item.TenSach</h4>
+                <p>Tác giả: @item.TacGia</p>
+                <p>Chủ đề: @item.ChuDe.TenChuDe</p>
+                <p>Giá: @String.Format("{0:N0} VNĐ", item.Gia)</p>
+
+                @Html.ActionLink("Chi tiết", "Details", new { id = item.MaSach }, new { @class = "btn btn-info" })
+                @Html.ActionLink("Sửa", "Edit", new { id = item.MaSach }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Xóa", "Delete", new { id = item.MaSach }, new { @class = "btn btn-danger" })
+            </div>
+        </div>
+    }
+</div>
