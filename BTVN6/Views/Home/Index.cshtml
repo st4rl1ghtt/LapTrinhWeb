@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container py-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="display-4 fw-bold text-dark mb-3">Welcome to <span class="text-primary">BTVN6 Shop</span></h1>
+            <p class="lead text-muted mb-4">Discover the best products curated just for you. Quality, reliability, and modern aesthetics all in one place.</p>
+            <div class="d-flex gap-3">
+                <a asp-controller="Product" asp-action="Index" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">Shop Now</a>
+                <a asp-controller="Account" asp-action="Register" class="btn btn-outline-secondary btn-lg rounded-pill px-4">Join Us</a>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://picsum.photos/id/119/800/600" alt="Hero Image" class="img-fluid rounded-4 shadow-lg">
+        </div>
+    </div>
+</div>

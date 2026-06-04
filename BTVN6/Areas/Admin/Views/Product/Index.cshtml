@@ -1,0 +1,47 @@
+@model IEnumerable<BTVN6.Models.Product>
+@{
+    ViewData["Title"] = "Admin - Product List";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4 mt-4">
+    <h2 class="fw-bold text-primary">Manage Products</h2>
+    <a asp-action="Add" class="btn btn-primary rounded-pill px-4 shadow-sm">Create New Product</a>
+</div>
+
+<div class="card shadow-sm border-0 rounded-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th class="ps-4">Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th class="text-end pe-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model) {
+                        <tr>
+                            <td class="ps-4">
+                                @if (!string.IsNullOrEmpty(item.ImageUrl)) {
+                                    <img src="@item.ImageUrl" alt="@item.Name" class="rounded" style="width: 50px; height: 50px; object-fit: cover;">
+                                } else {
+                                    <img src="https://picsum.photos/id/684/50/50" alt="Placeholder" class="rounded" style="width: 50px; height: 50px; object-fit: cover;">
+                                }
+                            </td>
+                            <td class="fw-medium">@item.Name</td>
+                            <td>$@item.Price</td>
+                            <td class="text-truncate" style="max-width: 200px;">@item.Description</td>
+                            <td class="text-end pe-4">
+                                <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning rounded-pill px-3">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger rounded-pill px-3">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
