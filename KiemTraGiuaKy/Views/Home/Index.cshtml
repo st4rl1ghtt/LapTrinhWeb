@@ -1,0 +1,210 @@
+@model IEnumerable<KiemTraGiuaKy.Models.Course>
+@{
+    ViewData["Title"] = "Home - Course Listing";
+    var currentPage = (int)(ViewData["CurrentPage"] ?? 1);
+    var totalPages = (int)(ViewData["TotalPages"] ?? 1);
+    var totalCourses = (int)(ViewData["TotalCourses"] ?? 0);
+    var searchString = ViewData["CurrentFilter"]?.ToString() ?? "";
+    var enrolledIds = ViewData["EnrolledCourseIds"] as List<int> ?? new List<int>();
+}
+
+<!-- Hero Section -->
+<div class="hero-section rounded-4 p-5 mb-5 text-white text-center"
+     style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+    <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto">
+            <span class="badge bg-warning text-dark fw-semibold mb-3 px-3 py-2 rounded-pill">
+                <i class="bi bi-mortarboard-fill me-1"></i>Course Registration System
+            </span>
+            <h1 class="display-5 fw-bold mb-3">Discover & Register Your <span class="text-warning">Courses</span></h1>
+            <p class="lead text-white-75 mb-4">Explore a wide range of academic courses and build your future today.</p>
+            <form asp-controller="Home" asp-action="Index" method="get" class="d-flex justify-content-center gap-2">
+                <input class="form-control form-control-lg rounded-pill border-0 shadow-sm"
+                       style="max-width: 400px;"
+                       type="search" name="searchString" placeholder="Search courses by name or lecturer..."
+                       value="@searchString" id="heroSearch" />
+                <button class="btn btn-warning btn-lg rounded-pill fw-semibold px-4 shadow-sm" type="submit">
+                    <i class="bi bi-search me-1"></i>Search
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Results info -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        @if (!string.IsNullOrEmpty(searchString))
+        {
+            <h2 class="h5 fw-semibold mb-0">
+                Search results for <span class="text-primary">"@searchString"</span>
+                <span class="text-muted fw-normal fs-6">(@totalCourses found)</span>
+            </h2>
+            <a asp-action="Index" class="btn btn-sm btn-outline-secondary rounded-pill mt-1">
+                <i class="bi bi-x-circle me-1"></i>Clear Search
+            </a>
+        }
+        else
+        {
+            <h2 class="h5 fw-semibold mb-0">All Courses <span class="text-muted fw-normal fs-6">(@totalCourses total)</span></h2>
+        }
+    </div>
+    <div class="text-muted small">
+        Page @currentPage of @totalPages
+    </div>
+</div>
+
+<!-- Course Cards -->
+@if (Model.Any())
+{
+    <div class="row g-4 mb-5">
+        @foreach (var course in Model)
+        {
+            var isEnrolled = enrolledIds.Contains(course.Id);
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 course-card border-0 shadow-sm rounded-4 overflow-hidden">
+                    <!-- Course Image -->
+                    <div class="course-img-wrapper position-relative" style="height: 200px; overflow: hidden;">
+                        @if (!string.IsNullOrEmpty(course.Image))
+                        {
+                            <img src="@course.Image" alt="@course.Name"
+                                 class="w-100 h-100 object-fit-cover course-img" />
+                        }
+                        else
+                        {
+                            <div class="w-100 h-100 d-flex align-items-center justify-content-center"
+                                 style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                                <i class="bi bi-book-fill text-white" style="font-size: 3.5rem; opacity: 0.7;"></i>
+                            </div>
+                        }
+                        <!-- Category badge -->
+                        <span class="position-absolute top-0 end-0 m-2 badge bg-dark bg-opacity-75 rounded-pill">
+                            @(course.Category?.Name ?? "General")
+                        </span>
+                        @if (isEnrolled)
+                        {
+                            <span class="position-absolute top-0 start-0 m-2 badge bg-success rounded-pill">
+                                <i class="bi bi-check-circle-fill me-1"></i>Enrolled
+                            </span>
+                        }
+                    </div>
+
+                    <div class="card-body d-flex flex-column p-4">
+                        <h3 class="card-title h6 fw-bold text-dark mb-2">@course.Name</h3>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-person-fill text-muted small"></i>
+                            <span class="text-muted small">@course.Lecturer</span>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-2 py-1">
+                                <i class="bi bi-award-fill me-1"></i>@course.Credits Credits
+                            </span>
+                        </div>
+
+                        <div class="mt-auto">
+                            @if (User.IsInRole("Student"))
+                            {
+                                if (isEnrolled)
+                                {
+                                    <form asp-controller="Enroll" asp-action="UnenrollByCourse" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="courseId" value="@course.Id" />
+                                        <input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString" />
+                                        <button type="submit" class="btn btn-outline-danger w-100 rounded-pill btn-sm fw-semibold"
+                                                onclick="return confirm('Are you sure you want to unenroll from this course?')">
+                                            <i class="bi bi-x-circle me-1"></i>Unenroll
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <form asp-controller="Enroll" asp-action="Enroll" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="courseId" value="@course.Id" />
+                                        <input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString" />
+                                        <button type="submit" class="btn btn-primary w-100 rounded-pill btn-sm fw-semibold">
+                                            <i class="bi bi-plus-circle me-1"></i>Enroll Now
+                                        </button>
+                                    </form>
+                                }
+                            }
+                            else if (!User.Identity?.IsAuthenticated == true)
+                            {
+                                <a asp-controller="Account" asp-action="Login" class="btn btn-outline-primary w-100 rounded-pill btn-sm fw-semibold">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i>Login to Enroll
+                                </a>
+                            }
+                            else
+                            {
+                                <!-- Admin view - no enroll button -->
+                                <a asp-area="Admin" asp-controller="Course" asp-action="Edit" asp-route-id="@course.Id"
+                                   class="btn btn-outline-warning w-100 rounded-pill btn-sm fw-semibold">
+                                    <i class="bi bi-pencil me-1"></i>Edit Course
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Pagination - Câu 1 -->
+    @if (totalPages > 1)
+    {
+        <nav aria-label="Course pagination" class="mt-4">
+            <ul class="pagination justify-content-center gap-1">
+                <!-- Previous -->
+                <li class="page-item @(currentPage <= 1 ? "disabled" : "")">
+                    <a class="page-link rounded-3 border-0 shadow-sm"
+                       asp-action="Index"
+                       asp-route-page="@(currentPage - 1)"
+                       asp-route-searchString="@searchString">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>
+
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == currentPage ? "active" : "")">
+                        <a class="page-link rounded-3 border-0 shadow-sm"
+                           asp-action="Index"
+                           asp-route-page="@i"
+                           asp-route-searchString="@searchString">@i</a>
+                    </li>
+                }
+
+                <!-- Next -->
+                <li class="page-item @(currentPage >= totalPages ? "disabled" : "")">
+                    <a class="page-link rounded-3 border-0 shadow-sm"
+                       asp-action="Index"
+                       asp-route-page="@(currentPage + 1)"
+                       asp-route-searchString="@searchString">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p class="text-center text-muted small mt-2">
+            Showing @Model.Count() of @totalCourses courses
+        </p>
+    }
+}
+else
+{
+    <div class="text-center py-5">
+        <i class="bi bi-search text-muted" style="font-size: 4rem;"></i>
+        <h3 class="text-muted mt-3">No courses found</h3>
+        @if (!string.IsNullOrEmpty(searchString))
+        {
+            <p class="text-muted">No courses match "<strong>@searchString</strong>". Try a different keyword.</p>
+            <a asp-action="Index" class="btn btn-primary rounded-pill px-4">View All Courses</a>
+        }
+        else
+        {
+            <p class="text-muted">No courses available yet.</p>
+        }
+    </div>
+}

@@ -1,0 +1,88 @@
+@model KiemTraGiuaKy.Models.Course
+@{
+    ViewData["Title"] = "Create Course";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="d-flex align-items-center gap-2 mb-4">
+            <a asp-action="Index" class="btn btn-outline-secondary btn-sm rounded-circle" style="width:36px; height:36px;">
+                <i class="bi bi-arrow-left"></i>
+            </a>
+            <div>
+                <h1 class="h4 fw-bold text-dark mb-0">
+                    <i class="bi bi-plus-circle-fill text-primary me-2"></i>Create New Course
+                </h1>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+                <form asp-action="Create" method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger rounded-3 small"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-semibold">Course Name <span class="text-danger">*</span></label>
+                        <input asp-for="Name" class="form-control rounded-3" placeholder="Enter course name" id="createCourseName" />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label asp-for="Credits" class="form-label fw-semibold">Credits <span class="text-danger">*</span></label>
+                            <input asp-for="Credits" class="form-control rounded-3" type="number" min="1" max="10" id="createCredits" />
+                            <span asp-validation-for="Credits" class="text-danger small"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="CategoryId" class="form-label fw-semibold">Category <span class="text-danger">*</span></label>
+                            <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-select rounded-3" id="createCategory">
+                                <option value="">-- Select Category --</option>
+                            </select>
+                            <span asp-validation-for="CategoryId" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Lecturer" class="form-label fw-semibold">Lecturer <span class="text-danger">*</span></label>
+                        <input asp-for="Lecturer" class="form-control rounded-3" placeholder="Enter lecturer name" id="createLecturer" />
+                        <span asp-validation-for="Lecturer" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Course Image</label>
+                        <input type="file" name="imageFile" class="form-control rounded-3" accept="image/*" id="createImageFile" />
+                        <small class="text-muted">Upload an image (JPG, PNG, GIF). Max 5MB.</small>
+                        <div id="imagePreview" class="mt-2 d-none">
+                            <img id="previewImg" src="#" alt="Preview" class="img-thumbnail rounded-3" style="max-height: 150px;" />
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <button type="submit" class="btn btn-primary rounded-pill px-4 fw-semibold" id="createSubmit">
+                            <i class="bi bi-plus-circle me-1"></i>Create Course
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary rounded-pill px-4">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('createImageFile').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('previewImg').src = e.target.result;
+                    document.getElementById('imagePreview').classList.remove('d-none');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}

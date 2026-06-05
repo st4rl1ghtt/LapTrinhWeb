@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Course Registration System - Register and manage your academic courses" />
+    <title>@ViewData["Title"] - CourseApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold fs-5" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    CourseApp
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-fill me-1"></i>Home
+                            </a>
+                        </li>
+                        @if (User.IsInRole("Student"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium" asp-controller="Enroll" asp-action="MyCourses">
+                                    <i class="bi bi-journal-bookmark-fill me-1"></i>My Courses
+                                </a>
+                            </li>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="bi bi-gear-fill me-1"></i>Admin
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark border-0 shadow">
+                                    <li>
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+                                            <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="Course" asp-action="Index">
+                                            <i class="bi bi-collection-fill me-2"></i>Manage Courses
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+
+                    <!-- Search form -->
+                    <form class="d-flex me-3" asp-controller="Home" asp-action="Index" method="get">
+                        <div class="input-group">
+                            <input class="form-control form-control-sm rounded-start-pill border-0 bg-white bg-opacity-10 text-white"
+                                   style="min-width: 220px;"
+                                   type="search" name="searchString" placeholder="Search courses..."
+                                   value="@ViewData["CurrentFilter"]" />
+                            <button class="btn btn-outline-light btn-sm rounded-end-pill" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-4 min-vh-content">
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show rounded-3 shadow-sm d-flex align-items-center gap-2" role="alert">
+                <i class="bi bi-check-circle-fill fs-5"></i>
+                <span>@TempData["SuccessMessage"]</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show rounded-3 shadow-sm d-flex align-items-center gap-2" role="alert">
+                <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+                <span>@TempData["ErrorMessage"]</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+        @if (TempData["WarningMessage"] != null)
+        {
+            <div class="alert alert-warning alert-dismissible fade show rounded-3 shadow-sm d-flex align-items-center gap-2" role="alert">
+                <i class="bi bi-exclamation-circle-fill fs-5"></i>
+                <span>@TempData["WarningMessage"]</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+
+        <main role="main" class="pb-5">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="bg-dark text-white mt-auto py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold d-flex align-items-center gap-2 mb-3">
+                        <i class="bi bi-mortarboard-fill text-primary"></i>
+                        CourseApp
+                    </h5>
+                    <p class="small text-white-50">A modern course registration platform for students and educators.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-semibold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a asp-controller="Home" asp-action="Index" class="text-white-50 text-decoration-none hover-white">Home</a></li>
+                        <li class="mb-1"><a asp-controller="Account" asp-action="Register" class="text-white-50 text-decoration-none">Register</a></li>
+                        <li class="mb-1"><a asp-controller="Account" asp-action="Login" class="text-white-50 text-decoration-none">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-semibold mb-3">System Info</h6>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-database-fill me-2"></i>ASP.NET Core MVC</p>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-layers-fill me-2"></i>Entity Framework Core</p>
+                    <p class="small text-white-50"><i class="bi bi-person-badge-fill me-2"></i>ASP.NET Core Identity</p>
+                </div>
+            </div>
+            <hr class="border-secondary" />
+            <div class="text-center small text-white-50">
+                &copy; 2026 CourseApp - Course Registration System
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

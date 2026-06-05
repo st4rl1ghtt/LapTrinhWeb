@@ -1,0 +1,83 @@
+@model IEnumerable<KiemTraGiuaKy.Models.Course>
+@{
+    ViewData["Title"] = "Manage Courses";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="h3 fw-bold text-dark mb-1">
+            <i class="bi bi-collection-fill text-primary me-2"></i>Manage Courses
+        </h1>
+        <p class="text-muted mb-0">@Model.Count() courses in total</p>
+    </div>
+    <a asp-action="Create" class="btn btn-primary rounded-pill px-4">
+        <i class="bi bi-plus-circle me-1"></i>Create New Course
+    </a>
+</div>
+
+<div class="card border-0 shadow-sm rounded-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0" id="coursesTable">
+                <thead class="table-light">
+                    <tr>
+                        <th class="ps-4">Course</th>
+                        <th>Category</th>
+                        <th class="text-center">Credits</th>
+                        <th>Lecturer</th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var course in Model)
+                    {
+                        <tr>
+                            <td class="ps-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    @if (!string.IsNullOrEmpty(course.Image))
+                                    {
+                                        <img src="@course.Image" alt="@course.Name"
+                                             class="rounded-3 object-fit-cover" width="50" height="50" />
+                                    }
+                                    else
+                                    {
+                                        <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                                             style="width:50px; height:50px; background: linear-gradient(135deg, #667eea, #764ba2);">
+                                            <i class="bi bi-book-fill text-white"></i>
+                                        </div>
+                                    }
+                                    <div>
+                                        <div class="fw-semibold text-dark">@course.Name</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge bg-secondary bg-opacity-10 text-secondary rounded-pill px-2">
+                                    @(course.Category?.Name ?? "N/A")
+                                </span>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-2">
+                                    @course.Credits
+                                </span>
+                            </td>
+                            <td class="text-muted small">@course.Lecturer</td>
+                            <td class="text-center">
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a asp-action="Edit" asp-route-id="@course.Id"
+                                       class="btn btn-warning btn-sm rounded-pill px-3" title="Edit">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@course.Id"
+                                       class="btn btn-danger btn-sm rounded-pill px-3" title="Delete">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
